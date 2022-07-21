@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cult.fit</title>
+    <script src="https://kit.fontawesome.com/78e4e5cdc7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/fitness.css">
+    <link rel="stylesheet" href="style/navbar.css">
+</head>
+<body>
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <a href="index.html">
+            <div class="heading">
+                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/u83vfrv2qdgpuuifrwct" alt="">
+                <h1>Cult.fit</h1>
+            </div>
+        </a>
+        <div class="list-section">
+            <ul>
+                <li><a href = "fitness.html">FITNESS</a></li>
+                <li><a href = "">CARE</a></li>
+                <li><a href = "">MIND</a></li>
+                <li><a href = "">STORE</a></li>
+            </ul>
+        </div>
+        <div class="signup-login-section">
+            <button class="location">
+                KOLKATA
+                <i class="fa-solid fa-location-dot"></i>
+            </button>
+            <button class="get-app">
+                GET APP
+            </button>
+            <button class="use-btn">
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <button class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- fitness Header Section -->
+
+    <div class="fitness-header-section">
+        <button>TRY FOR FREE</button>
+        <div class="litepass">
+            <!-- code in javascript -->
+        </div>
+    </div>
+
+    <!-- Offer Section -->
+
+    <div class="offer-section">
+        <div>
+            <div>
+                <h1>AMAZON VOUCHERS 3 MONTHS EXTENSION FREE</h1>
+                <p>On cultpass Live</p>
+            </div>
+            <div>
+                <p>Ends In</p>
+                <h1> <span id="hrs">20</span> : <span id="mins">56</span> : <span id="sec">54</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div>
+            <h1>Centers near <span>Park Street <i class="fa-solid fa-chevron-down"></i></span></h1>
+            <div>
+               <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,fl_progressive,f_auto,q_auto:eco/dpr_2/v1/cult-media/v2web/centers/center_270_IMAGE_665cb67d-aeb2-4027-b568-bc37413d8a67.png" alt="">
+                <div>
+                    <div>
+                        <h1>CULT PARK STREET</h1>
+                        <p>Park Street Group Classes</p>
+                    </div>
+                    <button>TRY FOR FREE</button>
+                </div>
+                <hr>
+                <p>Unlimited access with cultpass</p>
+            </div>
+        </div>
+        <div>
+            <h1 style="font-size: 28px; color : #307AFF;">VIEW ALL</h1>
+            <div>
+               <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_300,ar_1.77,fl_progressive,f_auto,q_auto:eco/dpr_2/image/icons/cult/no_gyms.png" alt="">
+                <div>
+                    <div>
+                        <h1>MORE CENTRES</h1>
+                        <p>Click below to expand your search</p>
+                    </div>
+                    <button>TRY FOR FREE</button>
+                </div>
+                <hr style="color:#2F3237 ;">
+                <p >Unlimited access with cultpass</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////////////// -->
+    <h2 style = "text-align: center; color:white; margin-bottom: 30px;">AT-CENTER</h2>
+    <h1 style = "text-align: center; color:white; margin-bottom: 30px; font-size: 54px;">Trainer-led group classes</h1>
+
+    <div class="slidin-cards">
+        <div style="background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_0.75,q_auto:eco,dpr_1,f_auto,fl_progressive//image/vm/5ff5b229-b562-428f-94a9-98da451ed367.png);"></div>
+        <div style="background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_0.75,q_auto:eco,dpr_1,f_auto,fl_progressive//image/vm/8009b1d0-4f5e-49e1-bc94-c41da6a5bcc1.png);"></div>
+        <div style="background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_0.75,q_auto:eco,dpr_1,f_auto,fl_progressive//image/vm/7bf136db-7217-4733-af9f-1bb8a4155a83.png);"></div>
+        <div style="background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_0.75,q_auto:eco,dpr_1,f_auto,fl_progressive//image/vm/7edc94fb-e895-4065-8e56-dabffdd4e4b0.png);"></div>
+    </div>
+
+</body>
+</html>
+<script src="script/fitness.js"></script>
+<script>
+    let d = new Date();
+
+    let sec = 60;
+    setInterval(function(){
+        if(sec < 0){
+            sec = 60;
+        }
+        document.getElementById("sec").innerText = sec;
+        sec--;
+    },800);
+</script>

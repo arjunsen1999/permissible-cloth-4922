@@ -10,6 +10,10 @@
     z-index: 1000;
 }
 
+.navbar > a{
+    text-decoration: none;
+}
+
 .heading{
     color: white;
     display: flex;

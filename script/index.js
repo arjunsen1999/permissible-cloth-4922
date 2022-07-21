@@ -49,7 +49,7 @@ function displayAni_container_2(data){
     ani_container_2.innerHTML = "";
     data.forEach(function(ele){
         let div = document.createElement("div");
-
+        div.setAttribute("data-aos", "zoom-in-up")
         let img = document.createElement("img");
         img.setAttribute("src", ele);
 
@@ -87,6 +87,8 @@ function display_class_container(data){
     class_container.innerHTML = "";
     data.forEach(function(ele){
         let div = document.createElement("div");
+        div.setAttribute("data-aos", "fade-up");
+        div.setAttribute("data-aos-duration", "3000")
 
             let img = document.createElement("img");
             img.setAttribute("src", ele);
@@ -96,6 +98,7 @@ function display_class_container(data){
         class_container.append(div);
     });
 }
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
