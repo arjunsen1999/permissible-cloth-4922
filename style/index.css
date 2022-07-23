@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #171A26;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.top-section{
+    width:100%;
+    height: 100vh;
+    background-image: url("https://global-uploads.webflow.com/5fe33d036237252135e3e74d/6167a37d00611d567ae32594_makingculttrain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.contain{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.contain > img{
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.contain > h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.contain > button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight:900;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    color: #eb736b;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.contain > button:active{
+    transform: scale(.98);
+}
+
+.contain > i{
+    color: white;
+    font-size: 35px;
+}
+
+
+/* /////////////////////////////////////// */
+
+.cards-section{
+    height: auto;
+    width: 100%;
+    background-color: #171A26;
+}
+
+.cultpass-container{
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.cultpass-container > .cards{
+    height: 200px;
+    border: 1px solid gray;
+    background-color: rgba(100, 100, 100, 0.1);
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards > h2{
+    color: #A9ABAF;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 22px;
+}
+
+.cards > img{
+    width: 90px;
+}
+
+.cards > p{
+    text-align: center;
+    color: #9FA1A6;
+    line-height: 20px;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+.animation-cards-section{
+    width: 100%;
+    min-height: auto;
+    background-color: #171A26;
+}
+
+.ani-container{
+    width: 85%;
+    margin: 20px auto 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ani-cards{
+    width: 450px;
+    height: 300px;
+    border-radius: 16px;
+
+}
+.ani-cards > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.ani-heading{
+    width: 70%;
+    margin: 0 auto;
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+
+.ani-heading{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.ani-container-2{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 80px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.ani-container-2 > div{
+    height: 250px;
+    border-radius: 16px;
+}
+.ani-container-2 > div > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+/* ////////////////////////////////////////////// */
+.class-container{
+    width: 100%; 
+    padding: 0 150px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    background-attachment: fixed;
+  
+}
+
+.class-container > div{
+    height: 300px;
+    border-radius: 16px;
+}
+
+.class-container > div > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.bottom-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(100, 100, 100, 0.1);
+    padding: 40px 0 0 0;
+}
+.bottom-section > h1:first-child{
+    color: white;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+.bottom-section > h1:first-child+button{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2B60B1;
+    padding: 5px 12px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.bottom-section > h1:first-child+button:hover{
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+.bottom-card-container-section{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 30px;
+    margin-bottom: 100px;
+}
+
+.bottom-card-container-section > div{
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.bottom-card-container-section > div > img{
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.bottom-card-container-section > div > img:hover{
+    transform: scale(1.08);
+}
+
+.bottom-card-container-section > div > h2{
+    color: white;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    margin-bottom: 20px;
+}
+
+.bottom-card-container-section > div > ul{
+    margin-left: 20px;
+}
+.bottom-card-container-section > div > ul > li{
+    margin-bottom: 15px;
+    color: white;
+    font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.bottom-card-container-section > div > .btns{
+    width: 100%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bottom-card-container-section > div > .btns > button{
+    font-size: 13px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.btns > button:nth-child(1){
+    background-color: #454851;
+    color: white;
+}
+.btns > button:nth-child(1):hover{
+    background-color: #696c75;
+    color: white;
+}
+.btns > button:nth-child(2){
+    background-color: #FFFFFF;
+    color: rgb(214, 59, 59);
+}
+.btns > button:nth-child(2):hover{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.img-div{
+    position: absolute;
+    left: 30px;
+    top: 130px;
+}
+.img-div > h3{
+    color: white;
+    margin-bottom: 8px;
+    
+}
+.img-div > img{
+    width: 80px;
+}
+
+#parallax{
+    background-color: #171A26;
+    margin-top: 10px;
+}
+
+.transformation{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.transformation > div{
+    height: 400px;
+    padding: 20px 20px 0 20px;
+    border-radius: 20px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.transformation > div > .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.transformation > div > .heading > h1{
+font-size: 30px;
+}
+.transformation > div > .heading > button{
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+
+  background-color:transparent;
+  border: none;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #37636D;
+}
+
+.transformation > div > p{
+    color: rgb(204, 203, 203);
+}
+.transformation > div:nth-child(1){
+    background-color: #225d68;
+}
+.transformation > div:hover{
+    transform: scale(1.04);
+}
+
+.transformation > div:nth-child(2){
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.transformation > div:nth-child(2) > .heading > button{
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+.transformation > div:nth-child(3){
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+
+.transformation > div:nth-child(3) > .heading > button{
+    background-color: rgba(100, 100, 100, 0.6);
+}
+
+.transformation > div:nth-child(4){
+    background-color: #452C56;
+}
+.transformation > div:nth-child(4) > .heading > button{
+    background-color: #4A4262;
+}
+.transformation{
+    margin-bottom: 90px;
+}
+
+/* /////////////////////////////////////////////////////////////// */
+.wellness-hub{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #949AB4;
+    height: 500px;
+    border-radius: 30px;
+    padding: 80px 50px;
+    margin-bottom: 90px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+.wellness-content{
+    /* border: 1px solid black; */
+}
+.wellness-content:nth-child(1) > h1{
+color: white;
+margin-bottom: 10px;
+font-size: 39px;
+}
+.wellness-content:nth-child(1) > p{
+    color: white;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.wellness-content:nth-child(1) > div{
+    width: 200px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: rgb(70, 66, 66);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wellness-content:nth-child(1) > div > i{
+ display: none;
+}
+
+
+
+.wellness-content:nth-child(1) > div:hover{
+    background-color: #EFEAED;
+}
+.wellness-content:nth-child(1) > div:hover i{
+    display: block;
+}
+
+.wellness-content:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+
+}
+
+.wellness-content:nth-child(2) > div{
+    border-radius: 10px;
+}
+
+.wellness-content:nth-child(2) > div:nth-child(1){
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wellness-content:nth-child(2) > div:nth-child(2){
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wellness-content:nth-child(2) > div:nth-child(3){
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wellness-content:nth-child(2) > div:nth-child(4){
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_276,ar_1.6,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/wellness-widget/therapy_desk/therapy4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.download-section{
+    width: 70%;
+   background-color: #375761;
+    margin: 0 auto;
+    height: 350px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    padding: 50px 30px 50px;
+}
+.doenload-contant{
+    height: 100%;
+    width: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.doenload-contant > h1{
+    color: white;
+}
+.doenload-contant > p{
+    color: white;
+}
+.download-btns{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-gap: 20px;
+}
+
+.download-btns > div{
+    height: 40px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.download-btns > div:hover{
+transform: scale(1.03);
+}
+
+.download-btns > div:nth-child(1){
+   
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_2.98,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/download-app/app-store-dark-card-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+
+    border: 1px solid white;
+}
+.download-btns > div:nth-child(2){
+   
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_3.31,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/download-app/play-store-dark-card-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+
+    border: 1px solid white;
+}
+
+#mid-heading{
+    text-align: center;
+    margin-bottom:60px ;
+    color: white;
+    font-size: 70px;
+}
+.careers-section{
+    width:70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.careers-section > div{
+   height:300px;
+   border-radius: 20px;
+   padding: 20px 20px 20px 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   background-color: #303341;
+   transition: all 0.3s linear;
+}
+
+.careers-section > div:hover{
+transform: scale(1.04);
+ }
+
+.careers-section > div:nth-child(1) > img{
+    width: 100%;
+}
+
+.careers-section > div:nth-child(1) > h1{
+    color: white;
+    text-align: center;
+    margin:0 auto;
+}
+.careers-section > div:nth-child(1) > button{
+    display: block;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 4px 8px;
+    border: none;
+    background-color: transparent;;
+    border-radius: 4px;
+    color: #3781ED;
+    cursor: pointer;
+} 
+.careers-section > div:nth-child(1) > button:hover{
+    background-color: #33434A;
+}
+.careers-section > div:nth-child(2){
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 50px 35px;
+     }
+     .careers-section > div:nth-child(2) > h1{
+        text-align: center;
+        color: white;
+        line-height: 43px;
+          }
+          .careers-section > div:nth-child(2) > p{
+          color: white;
+          text-align: center;
+          font-size: 24px;
+          line-height: 28px;
+              }
+              .careers-section > div:nth-child(2) > button{
+                display: block;
+                margin: 0 auto;
+                font-size: 12px;
+                font-weight: bolder;
+                padding: 4px 8px;
+                border: none;
+                background-color: transparent;;
+                border-radius: 4px;
+                color: #3781ED;
+                cursor: pointer;
+            } 
+            .careers-section > div:nth-child(2) > button:hover{
+                background-color: #33434A;
+            }
+.bottom-logo-container{
+    width: 100%;
+    height: 90vh;
+    background-color: #191C28;
+    padding: 40px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-logo-container > div:nth-child(1){
+    width: 300px;
+    margin-right: 60px;
+}
+.bottom-logo-container > div:nth-child(1) > img{
+    width: 100%;
+}
+.bottom-logo-container > div:nth-child(2){
+    width: 500px;
+    color: white;
+    line-height: 38px;
+    color: #A0A1A6;
+}

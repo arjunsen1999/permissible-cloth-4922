@@ -1,0 +1,90 @@
+.top-footer{
+    width: 100%;
+    background-color: black;
+    min-height: 400px;
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 3fr 1.4fr 0.6fr 1fr 2fr;
+    grid-gap: 20px;
+    
+}
+
+.top-footer > div{
+    /* border: 1px solid white; */
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.top-footer > div > img{
+    width: 120px;
+
+}
+
+.top-footer > div > *{
+    margin-bottom: 40px;
+    color: #757575;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.top-footer > div:last-child{
+   align-items: flex-end;
+}
+.nwtwork{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nwtwork > img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.footerbtn{
+    width: 150px;
+    height: 40px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.footerbtn:nth-child(1){
+   background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_178,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/download-app/app-store-dark-card-2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.footerbtn:nth-child(2){
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_178,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/download-app/play-store-dark-card-2.png");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 8px;
+ }
+
+ .down-footer-section{
+    width: 100%;
+    background-color: #111213;
+    min-height: 200px;
+    padding: 50px 10px 20px 10px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+ }
+
+ .down-footer-section > ul{
+    color: white;
+    list-style-type: none;
+ }
+
+ .down-footer-section > ul > li{
+    color: #757575;
+    font-size: 12px;
+    line-height: 18px;
+    cursor: pointer;
+ }

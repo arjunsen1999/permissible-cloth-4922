@@ -1,0 +1,183 @@
+.signpup-login-page{
+    position: fixed;
+    left: 35%;
+    top: 5%;
+    width: 350px;
+    height: 500px;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 20px 20px;
+    z-index: 10000;
+    transition: all 0.3s linear;
+}
+
+.signpup-login-page{
+    transform: translateY(-1000px);
+}
+
+.show{
+    transform: translateY(0);
+}
+
+.signpup-login-page > img{
+    display: block;
+    margin: 0 auto 10px;
+    width: 50px;
+}
+
+.signpup-login-page > h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signpup-login-page > .login{
+    width: 100%;
+}
+
+.signpup-login-page > .login > h2{
+ color: white;
+ text-align: center;
+ font-size: 18px;
+ margin-bottom: 20px;
+}
+
+.signpup-login-page > .login > form{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signpup-login-page > .login > form > input{
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    outline: 0;
+    border: none;
+}
+#email, #pass{
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+.signpup-login-page > .login > form > input[type = "submit"]{
+margin-top: 10px;
+background-color: antiquewhite;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.signpup-login-page > .login > form > input[type = "submit"]:active{
+transform: scale(.98);
+    }
+
+.signpup-login-page > .login > form+p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.signpup-login-page > .login > p:last-child{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.signpup-login-page > .login > p:last-child > button{
+    font-size: 17px;
+    padding: 0px 10px;
+    margin-left: 1px;
+    border: none;
+    color: blue;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.cross-icone{
+    width: 100%;
+}
+.cross-icone > i{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+
+/* /////////////////////////////// */
+
+.signpup-login-page > .signUp{
+    width: 100%;
+}
+
+.signpup-login-page > .signUp > h2{
+ color: white;
+ text-align: center;
+ font-size: 18px;
+ margin-bottom: 20px;
+}
+
+.signpup-login-page > .signUp > form{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.signpup-login-page > .signUp > form > input{
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    outline: 0;
+    border: none;
+}
+#emailS, #passS, #phone{
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+.signpup-login-page > .signUp > form > input[type = "submit"]{
+margin-top: 10px;
+background-color: antiquewhite;
+border: none;
+border-radius: 5px;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.signpup-login-page > .signUp > form > input[type = "submit"]:active{
+transform: scale(.98);
+    }
+
+.signpup-login-page > .signUp > form+p{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.signpup-login-page > .signUp > p:last-child{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.signpup-login-page > .signUp > p:last-child > button{
+    font-size: 17px;
+    padding: 0px 10px;
+    margin-left: 1px;
+    border: none;
+    color: blue;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.removelogin > .login{
+    display: none;
+}
+.removesignpup > .signUp{
+    display: none;
+}
