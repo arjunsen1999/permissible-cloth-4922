@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/footer.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/signput-login.css">
 </head>
 <body>
     <!-- Navbar Section -->
@@ -36,7 +37,7 @@
             <button class="get-app">
                 GET APP
             </button>
-            <button class="use-btn">
+            <button class="use-btn add">
                 <i class="fa-solid fa-user"></i>
             </button>
             <button class="cart">
@@ -341,6 +342,40 @@
         </ul>
     </footer>
 
+    <div class="signpup-login-page removesignpup">
+        <div class="cross-icone"><i class="fa-solid fa-xmark close"></i></div>
+        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_75,ar_1,q_auto:eco,dpr_1,f_auto,fl_progressive//image/test/brand-logo/curefit-logo-white.svg" alt="">
+        <h1>cult.fit</h1>
+
+        <div class="login">
+            <h2>LOGIN</h2>
+
+            <form action="">
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <input type="password" name="password" id="pass" placeholder="Enter Your Password">
+                <input type="submit" value="LOGIN">
+            </form>
+
+            <p> <span style="color:gray;">* By Continuing you agree to the</span> Terms of Services <span style="color:gray;">and</span> Privacy policy.</p>
+            <p>Go to sign up page <button id="signupPage">signup</button></p>
+        </div>
+
+        <div class="signUp">
+            <h2>SIGN UP</h2>
+
+            <form action="">
+                <input type="email" name="email" id="emailS" placeholder="Enter Your Email">
+                <input type="password" name="password" id="passS" placeholder="Enter Your Password">
+                <input type="number" name="p_number" id="phone" placeholder="Enter Your Phone Number">
+                <input type="submit" value="SIGN UP">
+            </form>
+
+            <p> <span style="color:gray;">* By Continuing you agree to the</span> Terms of Services <span style="color:gray;">and</span> Privacy policy.</p>
+            <p>Go to sign up page <button id="loginPage">Login</button></p>
+        </div>
+    </div>
+
+
 </body>
 </html>
 <script src="script/index.js"></script>
@@ -351,6 +386,102 @@ window.addEventListener("scroll", function(){
     let offset = window.pageYOffset;
     parallax.style.backgroundPositionY = offset * 0.9 +"px";
 });
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+let signpup_login_page = document.querySelector(".signpup-login-page");
+
+let closeB = document.querySelector(".close");
+let add = document.querySelector(".add");
+
+add.addEventListener("click", function(){
+    signpup_login_page.classList.add("show");
+});
+
+closeB.addEventListener("click", function(){
+    signpup_login_page.classList.remove("show");
+});
+
+let loginPage = document.getElementById("loginPage");
+let signupPage = document.getElementById("signupPage");
+
+loginPage.addEventListener("click", function(){
+    signpup_login_page.classList.add("removesignpup");
+    signpup_login_page.classList.remove("removelogin");
+});
+signupPage.addEventListener("click", function(){
+    signpup_login_page.classList.add("removelogin");
+    signpup_login_page.classList.remove("removesignpup");
+
+});
+
+//////////////////////////////////////////////////////////////////
+
+
+let signupdatabase ;
+
+refress();
+
+function refress(){
+    signupdatabase = JSON.parse(localStorage.getItem("signupdatabase")) || []
+}
+
+let form = document.querySelector(".signUp > form");
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    let email = form.emailS.value;
+    let pass = form.passS.value;
+    let phone = form.phone.value;
+
+    if(!email || !pass || !phone){
+        alert("Plz Enter All the input")
+    }else{
+        let data = {
+        email,
+        pass,
+        phone
+        }
+        signupdatabase.push(data);
+        localStorage.setItem("signupdatabase", JSON.stringify(signupdatabase));
+        alert("Successfully Signin");
+        refress()
+    }
+});
+
+let loginForm = document.querySelector(".login > form");
+loginForm.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let email = loginForm.email.value;
+    let pass = loginForm.pass.value;
+
+    if(!email || !pass){
+        alert("Plz Enter All the input")
+    }else{
+        let check = false;
+
+for(let i = 0; i < signupdatabase.length; i++){
+    if(signupdatabase[i].email == email && signupdatabase[i].pass == pass){
+        check = true;
+        break;
+    }
+}
+
+if(check){
+    alert("Login Successfully")
+}else{
+    alert("We don't find any data");
+}
+
+    }
+
+
+
+});
+
+
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
